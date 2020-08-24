@@ -1,9 +1,4 @@
-import React, {
-    Component,
-    Children,
-    isValidElement,
-    cloneElement,
-} from 'react';
+import React, { Component, Children, isValidElement, cloneElement } from 'react';
 import { polyfill } from 'react-lifecycles-compat';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -122,17 +117,11 @@ class TreeSelect extends Component {
         /**
          * （受控）当前值
          */
-        value: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.arrayOf(PropTypes.string),
-        ]),
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
         /**
          * （非受控）默认值
          */
-        defaultValue: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.arrayOf(PropTypes.string),
-        ]),
+        defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
         /**
          * 选中值改变时触发的回调函数
          * @param {String|Array} value 选中的值，单选时返回单个值，多选时返回数组
@@ -269,9 +258,7 @@ class TreeSelect extends Component {
         const { defaultVisible, visible, defaultValue, value } = props;
         this.state = {
             visible: typeof visible === 'undefined' ? defaultVisible : visible,
-            value: normalizeToArray(
-                typeof value === 'undefined' ? defaultValue : value
-            ),
+            value: normalizeToArray(typeof value === 'undefined' ? defaultValue : value),
             searchedValue: '',
             expandedKeys: [],
             autoExpandParent: false,
@@ -348,12 +335,7 @@ class TreeSelect extends Component {
         return value.reduce((ret, v) => {
             const k = this.state._v2n[v] && this.state._v2n[v].key;
             if (k) {
-                const {
-                    label,
-                    pos,
-                    disabled,
-                    checkboxDisabled,
-                } = this.state._k2n[k];
+                const { label, pos, disabled, checkboxDisabled } = this.state._k2n[k];
                 const d = {
                     value: v,
                     label,
@@ -430,19 +412,10 @@ class TreeSelect extends Component {
 
     handleRemove(removedItem) {
         const { value: removedValue } = removedItem;
-        const {
-            treeCheckable,
-            treeCheckStrictly,
-            treeCheckedStrategy,
-            onChange,
-        } = this.props;
+        const { treeCheckable, treeCheckStrictly, treeCheckedStrategy, onChange } = this.props;
 
         let value;
-        if (
-            treeCheckable &&
-            !treeCheckStrictly &&
-            ['parent', 'all'].indexOf(treeCheckedStrategy) !== -1
-        ) {
+        if (treeCheckable && !treeCheckStrictly && ['parent', 'all'].indexOf(treeCheckedStrategy) !== -1) {
             const removedPos = this.state._v2n[removedValue].pos;
             value = this.state.value.filter(v => {
                 const p = this.state._v2n[v].pos;
@@ -474,7 +447,7 @@ class TreeSelect extends Component {
         onChange(value, data);
     }
 
-    handleSearch(searchedValue) {
+    handleSearchedValue(searchedValue) {
         const searchedKeys = [];
         const retainedKeys = [];
         Object.keys(this.state._k2n).forEach(k => {
@@ -495,13 +468,18 @@ class TreeSelect extends Component {
             }
         });
 
-        this.setState({
-            searchedValue,
-            expandedKeys: searchedKeys,
-            autoExpandParent: true,
-        });
         this.searchedKeys = searchedKeys;
         this.retainedKeys = retainedKeys;
+    }
+
+    handleSearch(searchedValue) {
+        this.handleSearchedValue(searchedValue);
+
+        this.setState({
+            searchedValue,
+            expandedKeys: this.searchedKeys,
+            autoExpandParent: true,
+        });
 
         this.props.onSearch(searchedValue);
     }
@@ -572,10 +550,7 @@ class TreeSelect extends Component {
         };
         loop(label);
 
-        if (
-            labelString.length >= searchedValue.length &&
-            labelString.indexOf(searchedValue) > -1
-        ) {
+        if (labelString.length >= searchedValue.length && labelString.indexOf(searchedValue) > -1) {
             return true;
         }
 
@@ -609,10 +584,7 @@ class TreeSelect extends Component {
     createNodesByData(data, searching) {
         const { treeProps, useVirtual } = this.props;
 
-        const virtual =
-            'useVirtual' in this.props
-                ? useVirtual
-                : treeProps && treeProps.useVirtual;
+        const virtual = 'useVirtual' in this.props ? useVirtual : treeProps && treeProps.useVirtual;
 
         const loop = (data, isParentMatched, prefix = '0') => {
             const retainedNodes = [];
@@ -630,18 +602,13 @@ class TreeSelect extends Component {
                     (!hide || !virtual) &&
                         retainedNodes.push(
                             <TreeNode {...others} key={key}>
-                                {children && children.length
-                                    ? loop(children, isParentMatched, pos)
-                                    : null}
+                                {children && children.length ? loop(children, isParentMatched, pos) : null}
                             </TreeNode>
                         );
                 };
 
                 if (searching) {
-                    if (
-                        this.searchedKeys.indexOf(key) > -1 ||
-                        isParentMatched
-                    ) {
+                    if (this.searchedKeys.indexOf(key) > -1 || isParentMatched) {
                         addNode(true);
                     } else if (this.retainedKeys.indexOf(key) > -1) {
                         addNode(false);
@@ -683,12 +650,7 @@ class TreeSelect extends Component {
             notFoundContent,
             useVirtual,
         } = this.props;
-        const {
-            value,
-            searchedValue,
-            expandedKeys,
-            autoExpandParent,
-        } = this.state;
+        const { value, searchedValue, expandedKeys, autoExpandParent } = this.state;
 
         const treeProps = {
             multiple,
@@ -712,9 +674,7 @@ class TreeSelect extends Component {
         if (treeCheckable) {
             treeProps.checkable = treeCheckable;
             treeProps.checkStrictly = treeCheckStrictly;
-            treeProps.checkedStrategy = treeCheckStrictly
-                ? 'all'
-                : treeCheckedStrategy;
+            treeProps.checkedStrategy = treeCheckStrictly ? 'all' : treeCheckedStrategy;
             treeProps.checkedKeys = keys;
             if (!readOnly) {
                 treeProps.onCheck = this.handleCheck;
@@ -737,9 +697,7 @@ class TreeSelect extends Component {
             };
 
             if (this.searchedKeys.length) {
-                newChildren = dataSource
-                    ? this.createNodesByData(dataSource, true)
-                    : this.searchNodes(children);
+                newChildren = dataSource ? this.createNodesByData(dataSource, true) : this.searchNodes(children);
             } else {
                 notFound = true;
             }
@@ -766,17 +724,9 @@ class TreeSelect extends Component {
         return (
             <div className={`${treeSelectPrefix}dropdown`}>
                 {notFound ? (
-                    <div
-                        className={`${treeSelectPrefix}not-found ${contentClass}`}
-                    >
-                        {notFoundContent}
-                    </div>
+                    <div className={`${treeSelectPrefix}not-found ${contentClass}`}>{notFoundContent}</div>
                 ) : (
-                    <Tree
-                        {...treeProps}
-                        {...customTreeProps}
-                        className={contentClass}
-                    >
+                    <Tree {...treeProps} {...customTreeProps} className={contentClass}>
                         {newChildren}
                     </Tree>
                 )}
@@ -833,16 +783,12 @@ class TreeSelect extends Component {
             followTrigger,
             isPreview,
         } = this.props;
-        const others = pickOthers(
-            Object.keys(TreeSelect.propTypes),
-            this.props
-        );
+        const others = pickOthers(Object.keys(TreeSelect.propTypes), this.props);
         const { value, visible } = this.state;
 
-        const valueForSelect =
-            treeCheckable && !treeCheckStrictly
-                ? this.getValueForSelect(value)
-                : value;
+        this.handleSearchedValue(this.state.searchedValue);
+
+        const valueForSelect = treeCheckable && !treeCheckStrictly ? this.getValueForSelect(value) : value;
         let data = this.getData(valueForSelect, true);
         if (!multiple && !treeCheckable) {
             data = data[0];
