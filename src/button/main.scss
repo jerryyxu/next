@@ -103,162 +103,198 @@
     /* 普通按钮 */
     &#{$btn-prefix} {
         &-normal {
-            // border-style: $btn-pure-normal-border-style;
+            // border-style: $btn-normal-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-normal-solid-color,
-                    $btn-pure-normal-solid-color-hover,
-                    $btn-pure-normal-solid-color-active,
-                    $btn-pure-normal-solid-bg,
-                    $btn-pure-normal-solid-bg-hover,
-                    $btn-pure-normal-solid-bg-active,
+                    $btn-normal-solid-color,
+                    $btn-normal-solid-color-hover,
+                    $btn-normal-solid-color-active,
+                    $btn-normal-solid-bg,
+                    $btn-normal-solid-bg-hover,
+                    $btn-normal-solid-bg-active,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-normal-outline-border-style;
+                border-style: $btn-normal-outline-border-style;
                 @include button-color(
-                    $btn-pure-normal-outline-color,
-                    $btn-pure-normal-outline-color-hover,
-                    $btn-pure-normal-outline-color-active,
-                    $btn-pure-normal-outline-bg,
-                    $btn-pure-normal-outline-bg-hover,
-                    $btn-pure-normal-outline-bg-active,
-                    $btn-pure-normal-outline-border-color,
-                    $btn-pure-normal-outline-border-color-hover,
-                    $btn-pure-normal-outline-border-color-active,
+                    $btn-normal-outline-color,
+                    $btn-normal-outline-color-hover,
+                    $btn-normal-outline-color-active,
+                    $btn-normal-outline-bg,
+                    $btn-normal-outline-bg-hover,
+                    $btn-normal-outline-bg-active,
+                    $btn-normal-outline-border-color,
+                    $btn-normal-outline-border-color-hover,
+                    $btn-normal-outline-border-color-active,
                 );
                 &:active {
-                    box-shadow: $btn-pure-normal-outline-box-shadow-active;
+                    box-shadow: $btn-normal-outline-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-normal-text-color,
-                    $btn-pure-normal-text-color-hover,
-                    $btn-pure-normal-text-color-active,
+                    $btn-normal-text-color,
+                    $btn-normal-text-color-hover,
+                    $btn-normal-text-color-active,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &-primary {
-            // border-style: $btn-pure-primary-border-style;
+            // border-style: $btn-primary-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-primary-solid-color,
-                    $btn-pure-primary-solid-color-hover,
-                    $btn-pure-primary-solid-color-active,
-                    $btn-pure-primary-solid-bg,
-                    $btn-pure-primary-solid-bg-hover,
-                    $btn-pure-primary-solid-bg-active,
+                    $btn-primary-solid-color,
+                    $btn-primary-solid-color-hover,
+                    $btn-primary-solid-color-active,
+                    $btn-primary-solid-bg,
+                    $btn-primary-solid-bg-hover,
+                    $btn-primary-solid-bg-active,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
-                    box-shadow: $btn-pure-primary-solid-box-shadow-active;
+                    box-shadow: $btn-primary-solid-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-primary-outline-border-style;
+                border-style: $btn-primary-outline-border-style;
                 @include button-color(
-                    $btn-pure-primary-outline-color,
-                    $btn-pure-primary-outline-color-hover,
-                    $btn-pure-primary-outline-color-active,
-                    $btn-pure-primary-outline-bg,
-                    $btn-pure-primary-outline-bg-hover,
-                    $btn-pure-primary-outline-bg-active,
-                    $btn-pure-primary-outline-border-color,
-                    $btn-pure-primary-outline-border-color-hover,
-                    $btn-pure-primary-outline-border-color-active,
+                    $btn-primary-outline-color,
+                    $btn-primary-outline-color-hover,
+                    $btn-primary-outline-color-active,
+                    $btn-primary-outline-bg,
+                    $btn-primary-outline-bg-hover,
+                    $btn-primary-outline-bg-active,
+                    $btn-primary-outline-border-color,
+                    $btn-primary-outline-border-color-hover,
+                    $btn-primary-outline-border-color-active,
                 );
                 &:active {
-                    box-shadow: $btn-pure-primary-outline-box-shadow-active;
+                    box-shadow: $btn-primary-outline-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-primary-text-color,
-                    $btn-pure-primary-text-color-hover,
-                    $btn-pure-primary-text-color-active,
+                    $btn-primary-text-color,
+                    $btn-primary-text-color-hover,
+                    $btn-primary-text-color-active,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &-warning {
-            // border-style: $btn-pure-warning-border-style;
+            // border-style: $btn-warning-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-warning-solid-color,
-                    $btn-pure-warning-solid-color-hover,
-                    $btn-pure-warning-solid-color-active,
-                    $btn-pure-warning-solid-bg,
-                    $btn-pure-warning-solid-bg-hover,
-                    $btn-pure-warning-solid-bg-active,
+                    $btn-warning-solid-color,
+                    $btn-warning-solid-color-hover,
+                    $btn-warning-solid-color-active,
+                    $btn-warning-solid-bg,
+                    $btn-warning-solid-bg-hover,
+                    $btn-warning-solid-bg-active,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
-                    box-shadow: $btn-pure-warning-solid-box-shadow-active;
+                    box-shadow: $btn-warning-solid-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-warning-outline-border-style;
+                border-style: $btn-warning-outline-border-style;
                 @include button-color(
-                    $btn-pure-warning-outline-color,
-                    $btn-pure-warning-outline-color-hover,
-                    $btn-pure-warning-outline-color-active,
-                    $btn-pure-warning-outline-bg,
-                    $btn-pure-warning-outline-bg-hover,
-                    $btn-pure-warning-outline-bg-active,
-                    $btn-pure-warning-outline-border-color,
-                    $btn-pure-warning-outline-border-color-hover,
-                    $btn-pure-warning-outline-border-color-active,
+                    $btn-warning-outline-color,
+                    $btn-warning-outline-color-hover,
+                    $btn-warning-outline-color-active,
+                    $btn-warning-outline-bg,
+                    $btn-warning-outline-bg-hover,
+                    $btn-warning-outline-bg-active,
+                    $btn-warning-outline-border-color,
+                    $btn-warning-outline-border-color-hover,
+                    $btn-warning-outline-border-color-active,
                 );
                 &:active {
-                    box-shadow: $btn-pure-warning-outline-box-shadow-active;
+                    box-shadow: $btn-warning-outline-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-warning-text-color,
-                    $btn-pure-warning-text-color-hover,
-                    $btn-pure-warning-text-color-active,
+                    $btn-warning-text-color,
+                    $btn-warning-text-color-hover,
+                    $btn-warning-text-color-active,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &-inverse {
-            // border-style: $btn-pure-inverse-border-style;
+            // border-style: $btn-inverse-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-inverse-solid-color,
-                    $btn-pure-inverse-solid-color-hover,
-                    $btn-pure-inverse-solid-color-active,
-                    $btn-pure-inverse-solid-bg,
-                    $btn-pure-inverse-solid-bg-hover,
-                    $btn-pure-inverse-solid-bg-active,
+                    $btn-inverse-solid-color,
+                    $btn-inverse-solid-color-hover,
+                    $btn-inverse-solid-color-active,
+                    $btn-inverse-solid-bg,
+                    $btn-inverse-solid-bg-hover,
+                    $btn-inverse-solid-bg-active,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
-                    box-shadow: $btn-pure-inverse-solid-box-shadow-active;
+                    box-shadow: $btn-inverse-solid-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-inverse-outline-border-style;
+                border-style: $btn-inverse-outline-border-style;
                 @include button-color(
-                    $btn-pure-inverse-outline-color,
-                    $btn-pure-inverse-outline-color-hover,
-                    $btn-pure-inverse-outline-color-active,
-                    $btn-pure-inverse-outline-bg,
-                    $btn-pure-inverse-outline-bg-hover,
-                    $btn-pure-inverse-outline-bg-active,
-                    $btn-pure-inverse-outline-border-color,
-                    $btn-pure-inverse-outline-border-color-hover,
-                    $btn-pure-inverse-outline-border-color-active,
+                    $btn-inverse-outline-color,
+                    $btn-inverse-outline-color-hover,
+                    $btn-inverse-outline-color-active,
+                    $btn-inverse-outline-bg,
+                    $btn-inverse-outline-bg-hover,
+                    $btn-inverse-outline-bg-active,
+                    $btn-inverse-outline-border-color,
+                    $btn-inverse-outline-border-color-hover,
+                    $btn-inverse-outline-border-color-active,
                 );
                 &:active {
-                    box-shadow: $btn-pure-inverse-outline-box-shadow-active;
+                    box-shadow: $btn-inverse-outline-box-shadow-active;
                 }
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-inverse-text-color,
-                    $btn-pure-inverse-text-color-hover,
-                    $btn-pure-inverse-text-color-active,
+                    $btn-inverse-text-color,
+                    $btn-inverse-text-color-hover,
+                    $btn-inverse-text-color-active,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
@@ -290,28 +326,31 @@
     &[disabled] {
         cursor: not-allowed;
         &#{$btn-prefix}-normal {
-            // border-style: $btn-pure-normal-border-style;
+            // border-style: $btn-normal-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-solid-bg-disabled,
-                    $btn-pure-normal-solid-bg-disabled,
-                    $btn-pure-normal-solid-bg-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-solid-bg-disabled,
+                    $btn-normal-solid-bg-disabled,
+                    $btn-normal-solid-bg-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
             &#{$btn-prefix}-outline {
                 @include button-color(
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-solid-color-disabled,
-                    $btn-pure-normal-outline-bg-disabled,
-                    $btn-pure-normal-outline-bg-disabled,
-                    $btn-pure-normal-outline-bg-disabled,
-                    $btn-pure-normal-outline-border-color-disabled,
-                    $btn-pure-normal-outline-border-color-disabled,
-                    $btn-pure-normal-outline-border-color-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-solid-color-disabled,
+                    $btn-normal-outline-bg-disabled,
+                    $btn-normal-outline-bg-disabled,
+                    $btn-normal-outline-bg-disabled,
+                    $btn-normal-outline-border-color-disabled,
+                    $btn-normal-outline-border-color-disabled,
+                    $btn-normal-outline-border-color-disabled,
                 );
                 &:active {
                     box-shadow: none;
@@ -319,40 +358,49 @@
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-normal-text-color-disabled,
-                    $btn-pure-normal-text-color-disabled,
-                    $btn-pure-normal-text-color-disabled,
+                    $btn-normal-text-color-disabled,
+                    $btn-normal-text-color-disabled,
+                    $btn-normal-text-color-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &#{$btn-prefix}-primary {
-            // border-style: $btn-pure-primary-border-style;
+            // border-style: $btn-primary-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-primary-solid-color-disabled,
-                    $btn-pure-primary-solid-color-disabled,
-                    $btn-pure-primary-solid-color-disabled,
-                    $btn-pure-primary-solid-bg-disabled,
-                    $btn-pure-primary-solid-bg-disabled,
-                    $btn-pure-primary-solid-bg-disabled,
+                    $btn-primary-solid-color-disabled,
+                    $btn-primary-solid-color-disabled,
+                    $btn-primary-solid-color-disabled,
+                    $btn-primary-solid-bg-disabled,
+                    $btn-primary-solid-bg-disabled,
+                    $btn-primary-solid-bg-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
                     box-shadow: none;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-primary-outline-border-style;
+                border-style: $btn-primary-outline-border-style;
                 @include button-color(
-                    $btn-pure-primary-outline-color-disabled,
-                    $btn-pure-primary-outline-color-disabled,
-                    $btn-pure-primary-outline-color-disabled,
-                    $btn-pure-primary-outline-bg-disabled,
-                    $btn-pure-primary-outline-bg-disabled,
-                    $btn-pure-primary-outline-bg-disabled,
-                    $btn-pure-primary-outline-border-color-disabled,
-                    $btn-pure-primary-outline-border-color-disabled,
-                    $btn-pure-primary-outline-border-color-disabled,
+                    $btn-primary-outline-color-disabled,
+                    $btn-primary-outline-color-disabled,
+                    $btn-primary-outline-color-disabled,
+                    $btn-primary-outline-bg-disabled,
+                    $btn-primary-outline-bg-disabled,
+                    $btn-primary-outline-bg-disabled,
+                    $btn-primary-outline-border-color-disabled,
+                    $btn-primary-outline-border-color-disabled,
+                    $btn-primary-outline-border-color-disabled,
                 );
                 &:active {
                     box-shadow: none;
@@ -360,40 +408,49 @@
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-primary-text-color-disabled,
-                    $btn-pure-primary-text-color-disabled,
-                    $btn-pure-primary-text-color-disabled,
+                    $btn-primary-text-color-disabled,
+                    $btn-primary-text-color-disabled,
+                    $btn-primary-text-color-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &#{$btn-prefix}-warning {
-            // border-style: $btn-pure-warning-border-style;
+            // border-style: $btn-warning-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-warning-solid-color-disabled,
-                    $btn-pure-warning-solid-color-disabled,
-                    $btn-pure-warning-solid-color-disabled,
-                    $btn-pure-warning-solid-bg-disabled,
-                    $btn-pure-warning-solid-bg-disabled,
-                    $btn-pure-warning-solid-bg-disabled,
+                    $btn-warning-solid-color-disabled,
+                    $btn-warning-solid-color-disabled,
+                    $btn-warning-solid-color-disabled,
+                    $btn-warning-solid-bg-disabled,
+                    $btn-warning-solid-bg-disabled,
+                    $btn-warning-solid-bg-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
                     box-shadow: none;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-warning-outline-border-style;
+                border-style: $btn-warning-outline-border-style;
                 @include button-color(
-                    $btn-pure-warning-outline-color-disabled,
-                    $btn-pure-warning-outline-color-disabled,
-                    $btn-pure-warning-outline-color-disabled,
-                    $btn-pure-warning-outline-bg-disabled,
-                    $btn-pure-warning-outline-bg-disabled,
-                    $btn-pure-warning-outline-bg-disabled,
-                    $btn-pure-warning-outline-border-color-disabled,
-                    $btn-pure-warning-outline-border-color-disabled,
-                    $btn-pure-warning-outline-border-color-disabled,
+                    $btn-warning-outline-color-disabled,
+                    $btn-warning-outline-color-disabled,
+                    $btn-warning-outline-color-disabled,
+                    $btn-warning-outline-bg-disabled,
+                    $btn-warning-outline-bg-disabled,
+                    $btn-warning-outline-bg-disabled,
+                    $btn-warning-outline-border-color-disabled,
+                    $btn-warning-outline-border-color-disabled,
+                    $btn-warning-outline-border-color-disabled,
                 );
                 &:active {
                     box-shadow: none;
@@ -401,40 +458,49 @@
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-warning-text-color-disabled,
-                    $btn-pure-warning-text-color-disabled,
-                    $btn-pure-warning-text-color-disabled,
+                    $btn-warning-text-color-disabled,
+                    $btn-warning-text-color-disabled,
+                    $btn-warning-text-color-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
 
         &#{$btn-prefix}-inverse {
-            // border-style: $btn-pure-inverse-border-style;
+            // border-style: $btn-inverse-border-style;
             &#{$btn-prefix}-solid {
                 @include button-color(
-                    $btn-pure-inverse-solid-color-disabled,
-                    $btn-pure-inverse-solid-color-disabled,
-                    $btn-pure-inverse-solid-color-disabled,
-                    $btn-pure-inverse-solid-bg-disabled,
-                    $btn-pure-inverse-solid-bg-disabled,
-                    $btn-pure-inverse-solid-bg-disabled,
+                    $btn-inverse-solid-color-disabled,
+                    $btn-inverse-solid-color-disabled,
+                    $btn-inverse-solid-color-disabled,
+                    $btn-inverse-solid-bg-disabled,
+                    $btn-inverse-solid-bg-disabled,
+                    $btn-inverse-solid-bg-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
                 &:active {
                     box-shadow: none;
                 }
             }
             &#{$btn-prefix}-outline {
-                border-style: $btn-pure-inverse-outline-border-style;
+                border-style: $btn-inverse-outline-border-style;
                 @include button-color(
-                    $btn-pure-inverse-outline-color-disabled,
-                    $btn-pure-inverse-outline-color-disabled,
-                    $btn-pure-inverse-outline-color-disabled,
-                    $btn-pure-inverse-outline-bg-disabled,
-                    $btn-pure-inverse-outline-bg-disabled,
-                    $btn-pure-inverse-outline-bg-disabled,
-                    $btn-pure-inverse-outline-border-color-disabled,
-                    $btn-pure-inverse-outline-border-color-disabled,
-                    $btn-pure-inverse-outline-border-color-disabled,
+                    $btn-inverse-outline-color-disabled,
+                    $btn-inverse-outline-color-disabled,
+                    $btn-inverse-outline-color-disabled,
+                    $btn-inverse-outline-bg-disabled,
+                    $btn-inverse-outline-bg-disabled,
+                    $btn-inverse-outline-bg-disabled,
+                    $btn-inverse-outline-border-color-disabled,
+                    $btn-inverse-outline-border-color-disabled,
+                    $btn-inverse-outline-border-color-disabled,
                 );
                 &:active {
                     box-shadow: none;
@@ -442,9 +508,15 @@
             }
             &#{$btn-prefix}-text {
                 @include button-color(
-                    $btn-pure-inverse-text-color-disabled,
-                    $btn-pure-inverse-text-color-disabled,
-                    $btn-pure-inverse-text-color-disabled,
+                    $btn-inverse-text-color-disabled,
+                    $btn-inverse-text-color-disabled,
+                    $btn-inverse-text-color-disabled,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
+                    transparent,
                 );
             }
         }
