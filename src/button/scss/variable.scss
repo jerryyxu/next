@@ -133,137 +133,412 @@ $btn-size-l-corner: $corner-1 !default;
 
 /// text
 /// @namespace statement/disabled
-$btn-pure-color-disabled: $color-text1-1 !default;
+$btn-pure-normal-solid-color-disabled: $color-text1-1 !default;
 /// background
 /// @namespace statement/disabled
-$btn-pure-bg-disabled: $color-fill1-1 !default;
-/// border color
-/// @namespace statement/disabled
-$btn-pure-border-color-disabled: $color-line1-1 !default;
+$btn-pure-normal-solid-bg-disabled: $color-fill1-1 !default;
+
+/// text
+/// @namespace statement/normal
+$btn-pure-normal-solid-color: $color-text1-4 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-normal-solid-color-hover: $color-text1-4 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-normal-solid-color-active: $color-text1-4 !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-normal-solid-bg: $color-fill1-3 !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-normal-solid-bg-hover: $color-fill1-2 !default;
+/// background
+/// @namespace statement/active
+$btn-pure-normal-solid-bg-active: $color-fill1-4 !default;
+
 
 /// text
 /// @namespace statement/disabled
-$btn-pure-normal-color-disabled: $color-text1-1 !default;
+$btn-pure-normal-outline-color-disabled: $color-text1-1 !default;
 /// background
 /// @namespace statement/disabled
-$btn-pure-normal-bg-disabled: $color-fill1-1 !default;
+$btn-pure-normal-outline-bg-disabled: $color-white !default;
 /// border color
 /// @namespace statement/disabled
-$btn-pure-normal-border-color-disabled: $color-line1-1 !default;
-/// text
-/// @namespace statement/normal
-$btn-pure-normal-color: $color-text1-4 !default;
-/// text
-/// @namespace statement/hover
-$btn-pure-normal-color-hover: $color-text1-4 !default;
-/// text
-/// @namespace statement/active
-$btn-pure-normal-color-active: $color-text1-4 !default;
-/// background
-/// @namespace statement/normal
-$btn-pure-normal-bg: $color-white !default;
-/// background
-/// @namespace statement/hover
-$btn-pure-normal-bg-hover: $color-fill1-2 !default;
-/// background
-/// @namespace statement/active
-$btn-pure-normal-bg-active: $color-fill1-2 !default;
-/// border color
-/// @namespace statement/normal
-$btn-pure-normal-border-color: $color-line1-3 !default;
-/// border color
-/// @namespace statement/hover
-$btn-pure-normal-border-color-hover: $color-line1-4 !default;
-/// border color
-/// @namespace statement/active
-$btn-pure-normal-border-color-active: $color-line1-4 !default;
-/// border style
-/// @namespace statement/normal
-$btn-pure-normal-border-style: $line-solid !default;
+$btn-pure-normal-outline-border-color-disabled: $color-line1-1 !default;
 
-// Secondary
-// ----------------------------------------
-/// text
-/// @namespace statement/disabled
-$btn-pure-secondary-color-disabled: $color-text1-1 !default;
-/// background
-/// @namespace statement/disabled
-$btn-pure-secondary-bg-disabled: $color-fill1-1 !default;
-/// border color
-/// @namespace statement/disabled
-$btn-pure-secondary-border-color-disabled: $color-line1-1 !default;
-/// text
 /// @namespace statement/normal
-$btn-pure-secondary-color: $color-brand1-6 !default;
+$btn-pure-normal-outline-color: $color-text1-4 !default;
 /// text
 /// @namespace statement/hover
-$btn-pure-secondary-color-hover: $color-white !default;
+$btn-pure-normal-outline-color-hover: $color-brand1-6 !default;
 /// text
 /// @namespace statement/active
-$btn-pure-secondary-color-active: $color-white !default;
+$btn-pure-normal-outline-color-active: $color-brand1-9 !default;
 /// background
 /// @namespace statement/normal
-$btn-pure-secondary-bg: $color-white !default;
+$btn-pure-normal-outline-bg: $color-white !default;
 /// background
 /// @namespace statement/hover
-$btn-pure-secondary-bg-hover: $color-brand1-9 !default;
+$btn-pure-normal-outline-bg-hover: $color-white !default;
 /// background
 /// @namespace statement/active
-$btn-pure-secondary-bg-active: $color-brand1-9 !default;
+$btn-pure-normal-outline-bg-active: $color-white !default;
 /// border color
 /// @namespace statement/normal
-$btn-pure-secondary-border-color: $color-brand1-6 !default;
+$btn-pure-normal-outline-border-color: $color-line1-3 !default;
 /// border color
 /// @namespace statement/hover
-$btn-pure-secondary-border-color-hover: $color-brand1-9 !default;
+$btn-pure-normal-outline-border-color-hover: $color-brand1-6 !default;
 /// border color
 /// @namespace statement/active
-$btn-pure-secondary-border-color-active: $color-brand1-9 !default;
+$btn-pure-normal-outline-border-color-active: $color-brand1-9 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-normal-outline-box-shadow-color-active: $color-brand1-6 !default;
+$btn-pure-normal-outline-box-shadow-opacity-active: .2 !default;
+$btn-pure-normal-outline-box-shadow-active: 0 0 0 4px rgba($btn-pure-normal-outline-box-shadow-color-active, $btn-pure-normal-outline-box-shadow-opacity-active) !default;
 /// border style
 /// @namespace statement/normal
-$btn-pure-secondary-border-style: $line-solid !default;
+$btn-pure-normal-outline-border-style: $line-solid !default;
+
+
+/// text
+/// @namespace statement/disabled
+$btn-pure-normal-text-color-disabled: $color-text1-1 !default;
+
+/// @namespace statement/normal
+$btn-pure-normal-text-color: $color-text1-3 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-normal-text-color-hover: $color-brand1-6 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-normal-text-color-active: $color-brand1-9 !default;
 
 // Primary
 // ----------------------------------------
 /// text
 /// @namespace statement/disabled
-$btn-pure-primary-color-disabled: $color-text1-1 !default;
+$btn-pure-primary-solid-color-disabled: rgba($color-white, .64) !default;
 /// background
 /// @namespace statement/disabled
-$btn-pure-primary-bg-disabled: $color-fill1-1 !default;
-/// border color
-/// @namespace statement/disabled
-$btn-pure-primary-border-color-disabled: $color-line1-1 !default;
+$btn-pure-primary-solid-bg-disabled: $color-brand1-1 !default;
+
+
 /// text
 /// @namespace statement/normal
-$btn-pure-primary-color: $color-white !default;
+$btn-pure-primary-solid-color: $color-white !default;
 /// text
 /// @namespace statement/hover
-$btn-pure-primary-color-hover: $color-white !default;
+$btn-pure-primary-solid-color-hover: $color-white !default;
 /// text
 /// @namespace statement/active
-$btn-pure-primary-color-active: $color-white !default;
+$btn-pure-primary-solid-color-active: $color-white !default;
 /// background
 /// @namespace statement/normal
-$btn-pure-primary-bg: $color-brand1-6 !default;
+$btn-pure-primary-solid-bg: $color-brand1-6 !default;
 /// background
 /// @namespace statement/hover
-$btn-pure-primary-bg-hover: $color-brand1-9 !default;
+$color-brand1-2: #2BD5FF;
+$btn-pure-primary-solid-bg-hover: $color-brand1-2 !default;
 /// background
 /// @namespace statement/active
-$btn-pure-primary-bg-active: $color-brand1-9 !default;
-/// border color
-/// @namespace statement/normal
-$btn-pure-primary-border-color: $color-transparent !default;
-/// border color
-/// @namespace statement/hover
-$btn-pure-primary-border-color-hover: $color-transparent !default;
+$btn-pure-primary-solid-bg-active: $color-brand1-9 !default;
 /// border color
 /// @namespace statement/active
-$btn-pure-primary-border-color-active: $color-transparent !default;
+$btn-pure-primary-solid-box-shadow-color-active: $color-brand1-6 !default;
+$btn-pure-primary-solid-box-shadow-opacity-active: .2 !default;
+$btn-pure-primary-solid-box-shadow-active: 0 0 0 4px rgba($btn-pure-primary-solid-box-shadow-color-active, $btn-pure-primary-solid-box-shadow-opacity-active) !default;
+
+
 /// border style
 /// @namespace statement/normal
-$btn-pure-primary-border-style: $line-solid !default;
+$btn-pure-primary-outline-color-disabled: $color-brand1-1 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-primary-outline-bg-disabled: $color-white !default;
+/// text
+/// @namespace statement/active
+$btn-pure-primary-outline-border-color-disabled: $color-brand1-1 !default;
+
+
+/// @namespace statement/normal
+$btn-pure-primary-outline-color: $color-brand1-6 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-primary-outline-color-hover: $color-brand1-2 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-primary-outline-color-active: $color-brand1-9 !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-primary-outline-bg: $color-white !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-primary-outline-bg-hover: $color-white !default;
+/// background
+/// @namespace statement/active
+$btn-pure-primary-outline-bg-active: $color-white !default;
+/// border color
+/// @namespace statement/normal
+$btn-pure-primary-outline-border-color: $color-brand1-6 !default;
+/// border color
+/// @namespace statement/hover
+$btn-pure-primary-outline-border-color-hover: $color-brand1-2 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-primary-outline-border-color-active: $color-brand1-9 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-primary-outline-box-shadow-color-active: $color-brand1-6 !default;
+$btn-pure-primary-outline-box-shadow-opacity-active: .2 !default;
+$btn-pure-primary-outline-box-shadow-active: 0 0 0 4px rgba($btn-pure-primary-outline-box-shadow-color-active, $btn-pure-primary-outline-box-shadow-opacity-active) !default;
+/// border style
+/// @namespace statement/normal
+$btn-pure-primary-outline-border-style: $line-solid !default;
+
+
+/// @namespace statement/normal
+$btn-pure-primary-text-color-disabled: $color-brand1-1 !default;
+
+/// @namespace statement/normal
+$btn-pure-primary-text-color: $color-brand1-6 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-primary-text-color-hover: $color-brand1-2 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-primary-text-color-active: $color-brand1-9 !default;
+
+// warning
+// ----------------------------------------
+/// text
+/// @namespace statement/disabled
+$btn-pure-warning-solid-color-disabled: rgba($color-white, .64) !default;
+/// background
+/// @namespace statement/disabled
+$btn-pure-warning-solid-bg-disabled: $color-error-1 !default;
+
+/// text
+/// @namespace statement/normal
+$btn-pure-warning-solid-color: $color-white !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-warning-solid-color-hover: $color-white !default;
+/// text
+/// @namespace statement/active
+$btn-pure-warning-solid-color-active: $color-white !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-warning-solid-bg: $color-error-3 !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-warning-solid-bg-hover: $color-error-2 !default;
+/// background
+/// @namespace statement/active
+$btn-pure-warning-solid-bg-active: $color-error-4 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-warning-solid-box-shadow-color-active: $color-error-2 !default;
+$btn-pure-warning-solid-box-shadow-opacity-active: .2 !default;
+$btn-pure-warning-solid-box-shadow-active: 0 0 0 4px rgba($btn-pure-warning-solid-box-shadow-color-active, $btn-pure-warning-solid-box-shadow-opacity-active) !default;
+
+
+/// text
+/// @namespace statement/disabled
+$btn-pure-warning-outline-color-disabled: $color-error-1 !default;
+/// background
+/// @namespace statement/disabled
+$btn-pure-warning-outline-bg-disabled: $color-white !default;
+/// border color
+/// @namespace statement/disabled
+$btn-pure-warning-outline-border-color-disabled: $color-error-1 !default;
+
+/// @namespace statement/normal
+$btn-pure-warning-outline-color: $color-error-3 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-warning-outline-color-hover: $color-error-2 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-warning-outline-color-active: $color-error-4 !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-warning-outline-bg: $color-white !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-warning-outline-bg-hover: $color-white !default;
+/// background
+/// @namespace statement/active
+$btn-pure-warning-outline-bg-active: $color-white !default;
+/// border color
+/// @namespace statement/normal
+$btn-pure-warning-outline-border-color: $color-error-3 !default;
+/// border color
+/// @namespace statement/hover
+$btn-pure-warning-outline-border-color-hover: $color-error-2 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-warning-outline-border-color-active: $color-error-4 !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-warning-outline-box-shadow-color-active: $color-error-2 !default;
+$btn-pure-warning-outline-box-shadow-opacity-active: .2 !default;
+$btn-pure-warning-outline-box-shadow-active: 0 0 0 4px rgba($btn-pure-warning-outline-box-shadow-color-active, $btn-pure-warning-outline-box-shadow-opacity-active) !default;
+/// border style
+/// @namespace statement/normal
+$btn-pure-warning-outline-border-style: $line-solid !default;
+
+
+/// @namespace statement/normal
+$btn-pure-warning-text-color-disabled: $color-error-1 !default;
+
+/// @namespace statement/normal
+$btn-pure-warning-text-color: $color-error-3 !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-warning-text-color-hover: $color-error-2 !default;
+/// text
+/// @namespace statement/active
+$btn-pure-warning-text-color-active: $color-error-4 !default;
+
+// Inverse
+// ----------------------------------------
+/// text
+/// @namespace statement/disabled
+$btn-pure-inverse-solid-opacity-active-disabled: .26 !default;
+$btn-pure-inverse-solid-color-full-active-disabled: $color-white !default;
+$btn-pure-inverse-solid-color-disabled: rgba($btn-pure-inverse-solid-color-full-active-disabled, $btn-pure-inverse-solid-opacity-active-disabled) !default;
+/// background
+/// @namespace statement/disabled
+$btn-pure-inverse-solid-bg-opacity-active-disabled: .04 !default;
+$btn-pure-inverse-solid-bg-color-full-active-disabled: $color-white !default;
+$btn-pure-inverse-solid-bg-disabled: rgba($btn-pure-inverse-solid-bg-color-full-active-disabled, $btn-pure-inverse-solid-bg-opacity-active-disabled) !default;
+
+/// text
+/// @namespace statement/normal
+$btn-pure-inverse-solid-color: $color-white !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-inverse-solid-color-hover: $color-white !default;
+/// text
+/// @namespace statement/active
+$btn-pure-inverse-solid-opacity-active: .52 !default;
+$btn-pure-inverse-solid-color-full-active: $color-white !default;
+$btn-pure-inverse-solid-color-active: rgba($btn-pure-inverse-solid-color-full-active, $btn-pure-inverse-solid-opacity-active) !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-inverse-solid-bg-opacity: .12 !default;
+$btn-pure-inverse-solid-bg-color-full: $color-white !default;
+$btn-pure-inverse-solid-bg: rgba($btn-pure-inverse-solid-bg-color-full, $btn-pure-inverse-solid-bg-opacity) !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-inverse-solid-bg-opacity-hover: .26 !default;
+$btn-pure-inverse-solid-bg-color-full-hover: $color-white !default;
+$btn-pure-inverse-solid-bg-hover: rgba($btn-pure-inverse-solid-bg-color-full-hover, $btn-pure-inverse-solid-bg-opacity-hover) !default;
+/// background
+/// @namespace statement/active
+$btn-pure-inverse-solid-bg-opacity-active: .08 !default;
+$btn-pure-inverse-solid-bg-color-full-acitve: $color-white !default;
+$btn-pure-inverse-solid-bg-active: rgba($btn-pure-inverse-solid-bg-color-full-acitve, $btn-pure-inverse-solid-bg-opacity-active) !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-inverse-solid-box-shadow-opacity-active: .04 !default;
+$btn-pure-inverse-solid-box-shadow-color-full-acitve: $color-white !default;
+$btn-pure-inverse-solid-box-shadow-active: 0 0 0 4px rgba($btn-pure-inverse-solid-box-shadow-color-full-acitve, $btn-pure-inverse-solid-box-shadow-opacity-active) !default;
+
+
+/// text
+/// @namespace statement/disabled
+$btn-pure-inverse-outline-color-full-disabled: $color-white !default;
+$btn-pure-inverse-outline-opacity-disabled: .26 !default;
+$btn-pure-inverse-outline-color-disabled: rgba($btn-pure-inverse-outline-color-full-disabled, $btn-pure-inverse-outline-opacity-disabled) !default;
+/// background
+/// @namespace statement/disabled
+$btn-pure-inverse-outline-bg-disabled: inherit !default;
+/// border color
+/// @namespace statement/disabled
+$btn-pure-inverse-outline-border-color-full-disabled: $color-white !default;
+$btn-pure-inverse-outline-border-opacity-disabled: .08 !default;
+$btn-pure-inverse-outline-border-color-disabled: rgba($btn-pure-inverse-outline-border-color-full-disabled, $btn-pure-inverse-outline-border-opacity-disabled) !default;
+
+/// @namespace statement/normal
+$btn-pure-inverse-outline-color: $color-white !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-inverse-outline-color-full-hover: $color-white !default;
+$btn-pure-inverse-outline-opacity-hover: .74 !default;
+$btn-pure-inverse-outline-color-hover: rgba($btn-pure-inverse-outline-color-full-hover, $btn-pure-inverse-outline-opacity-hover) !default;
+/// text
+/// @namespace statement/active
+$btn-pure-inverse-outline-color-full-active: $color-white !default;
+$btn-pure-inverse-outline-opacity-active: .26 !default;
+$btn-pure-inverse-outline-color-active: rgba($btn-pure-inverse-outline-color-full-active, $btn-pure-inverse-outline-opacity-active) !default;
+/// background
+/// @namespace statement/normal
+$btn-pure-inverse-outline-bg: inherit !default;
+/// background
+/// @namespace statement/hover
+$btn-pure-inverse-outline-bg-color-full-hover: $color-white !default;
+$btn-pure-inverse-outline-bg-opacity-hover: .26 !default;
+$btn-pure-inverse-outline-bg-hover: rgba($btn-pure-inverse-outline-bg-color-full-hover, $btn-pure-inverse-outline-bg-opacity-hover) !default;
+/// background
+/// @namespace statement/active
+$btn-pure-inverse-outline-bg-color-full-active: $color-white !default;
+$btn-pure-inverse-outline-bg-opacity-active: .08 !default;
+$btn-pure-inverse-outline-bg-active: rgba($btn-pure-inverse-outline-bg-color-full-active, $btn-pure-inverse-outline-bg-opacity-active) !default;
+/// border color
+/// @namespace statement/normal
+$btn-pure-inverse-outline-border-color: $color-white !default;
+/// border color
+/// @namespace statement/hover
+$btn-pure-inverse-outline-border-color-full-hover: $color-white !default;
+$btn-pure-inverse-outline-border-opacity-hover: .26 !default;
+$btn-pure-inverse-outline-border-color-hover: rgba($btn-pure-inverse-outline-border-color-full-hover, $btn-pure-inverse-outline-border-opacity-hover) !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-inverse-outline-border-color-full-active: $color-white !default;
+$btn-pure-inverse-outline-border-opacity-active: .08 !default;
+$btn-pure-inverse-outline-border-color-active: rgba($btn-pure-inverse-outline-border-color-full-active, $btn-pure-inverse-outline-border-opacity-active) !default;
+/// border color
+/// @namespace statement/active
+$btn-pure-inverse-outline-box-shadow-color-full-active: $color-white !default;
+$btn-pure-inverse-outline-box-shadow-opacity-active: .04 !default;
+$btn-pure-inverse-outline-box-shadow-active: 0 0 0 4px rgba($btn-pure-inverse-outline-box-shadow-color-full-active, $btn-pure-inverse-outline-box-shadow-opacity-active) !default;
+/// border style
+/// @namespace statement/normal
+$btn-pure-inverse-outline-border-style: $line-solid !default;
+
+
+/// @namespace statement/normal
+$btn-pure-inverse-text-color-full-disabled: $color-white !default;
+$btn-pure-inverse-text-opacity-disabled: .26 !default;
+$btn-pure-inverse-text-color-disabled: rgba($btn-pure-inverse-text-color-full-disabled, $btn-pure-inverse-text-opacity-disabled) !default;
+
+/// @namespace statement/normal
+$btn-pure-inverse-text-color-full: $color-white !default;
+$btn-pure-inverse-text-opacity: .74 !default;
+$btn-pure-inverse-text-color: rgba($btn-pure-inverse-text-color-full, $btn-pure-inverse-text-opacity) !default;
+/// text
+/// @namespace statement/hover
+$btn-pure-inverse-text-color-full-hover: $color-white !default;
+$btn-pure-inverse-text-opacity-hover: 1 !default;
+$btn-pure-inverse-text-color-hover: rgba($btn-pure-inverse-text-color-full-hover, $btn-pure-inverse-text-opacity-hover) !default;
+/// text
+/// @namespace statement/active
+$btn-pure-inverse-text-color-full-active: $color-white !default;
+$btn-pure-inverse-text-opacity-active: .52 !default;
+$btn-pure-inverse-text-color-active: rgba($btn-pure-inverse-text-color-full-active, $btn-pure-inverse-text-opacity-active) !default;
+
+/// text
+/// @namespace statement/disabled
+$btn-text-disabled-color: $color-text1-1 !default;
+
+/// text
+/// @namespace statement/loading
+$btn-text-loading-color: $color-text1-4 !default;
 
 // Ghost Dark
 // ----------------------------------------
@@ -395,148 +670,6 @@ $btn-ghost-light-border-color-disabled-rgb: $color-black !default;
 $btn-ghost-light-border-color-disabled-opacity: .1 !default;
 $btn-ghost-light-border-color-disabled: rgba($btn-ghost-light-border-color-disabled-rgb, $btn-ghost-light-border-color-disabled-opacity);
 
-// Warning Primary
-// ----------------------------------------
-
-/// border style
-/// @namespace statement/normal
-$btn-warning-border-style: $line-solid !default;
-
-/// text
-/// @namespace statement/normal
-$btn-warning-primary-color: $color-white !default;
-
-/// text
-/// @namespace statement/hover
-$btn-warning-primary-color-hover: $color-white !default;
-/// text
-/// @namespace statement/active
-$btn-warning-primary-color-active: $color-white !default;
-
-/// border color
-/// @namespace statement/normal
-$btn-warning-primary-border-color: $color-error-3 !default;
-
-/// border color
-/// @namespace statement/hover
-$btn-warning-primary-border-color-hover: $color-error-4 !default;
-/// border color
-/// @namespace statement/active
-$btn-warning-primary-border-color-active: $color-error-4 !default;
-
-/// background
-/// @namespace statement/normal
-$btn-warning-primary-bg: $color-error-3 !default;
-
-/// background
-/// @namespace statement/hover
-$btn-warning-primary-bg-hover: $color-error-4 !default;
-/// background
-/// @namespace statement/active
-$btn-warning-primary-bg-active: $color-error-4 !default;
-
-/// text
-/// @namespace statement/disabled
-$btn-warning-primary-color-disabled: $color-text1-1 !default;
-
-/// border
-/// @namespace statement/disabled
-$btn-warning-primary-border-color-disabled: $color-line1-2 !default;
-
-/// background
-/// @namespace statement/disabled
-$btn-warning-primary-bg-disabled: $color-fill1-1 !default;
-
-// Warning Normal
-// ----------------------------------------
-
-/// text
-/// @namespace statement/normal
-$btn-warning-normal-color: $color-error-3 !default;
-
-/// text
-/// @namespace statement/hover
-$btn-warning-normal-color-hover: $color-white !default;
-
-/// text
-/// @namespace statement/active
-$btn-warning-normal-color-active: $color-white !default;
-
-/// border
-/// @namespace statement/normal
-$btn-warning-normal-border-color: $color-error-3 !default;
-
-/// border
-/// @namespace statement/hover
-$btn-warning-normal-border-color-hover: $color-error-4 !default;
-/// border
-/// @namespace statement/active
-$btn-warning-normal-border-color-active: $color-error-4 !default;
-
-/// background
-/// @namespace statement/normal
-$btn-warning-normal-bg: $color-white !default;
-
-/// background
-/// @namespace statement/hover
-$btn-warning-normal-bg-hover: $color-error-4 !default;
-
-/// background
-/// @namespace statement/active
-$btn-warning-normal-bg-active: $color-error-4 !default;
-
-/// text
-/// @namespace statement/disabled
-$btn-warning-normal-color-disabled: $color-text1-1 !default;
-
-/// border
-/// @namespace statement/disabled
-$btn-warning-normal-border-color-disabled: $color-line1-1 !default;
-
-/// background
-/// @namespace statement/disabled
-$btn-warning-normal-bg-disabled: $color-fill1-1 !default;
-
-// Text primary & disabled & loading
-// ----------------------------------------
-
-/// text
-/// @namespace statement/normal
-$btn-text-primary-color: $color-link-1 !default;
-
-/// text
-/// @namespace statement/hover
-$btn-text-primary-color-hover: $color-brand1-9 !default;
-
-/// text
-/// @namespace statement/disabled
-$btn-text-disabled-color: $color-text1-1 !default;
-
-/// text
-/// @namespace statement/loading
-$btn-text-loading-color: $color-text1-4 !default;
-
-// Text secondary
-// ----------------------------------------
-
-/// text
-/// @namespace statement/normal
-$btn-text-secondary-color: $color-text1-3 !default;
-
-/// text
-/// @namespace statement/hover
-$btn-text-secondary-color-hover: $color-brand1-6 !default;
-
-// Text normal
-// ----------------------------------------
-
-/// text
-/// @namespace statement/normal
-$btn-text-normal-color: $color-text1-4 !default;
-
-/// text
-/// @namespace statement/hover
-$btn-text-normal-color-hover: $color-brand1-6 !default;
 
 // Text small
 // ----------------------------------------
