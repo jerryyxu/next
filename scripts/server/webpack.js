@@ -157,6 +157,7 @@ module.exports = function getWebpackConfig(options) {
         react: 'var window.React',
         'react-dom': 'var window.ReactDOM',
         moment: 'var window.moment',
+        'react-draggable': 'ReactDraggable',
     };
 
     return config;
