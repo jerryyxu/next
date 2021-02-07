@@ -5,12 +5,15 @@ import assert from 'power-assert';
 import dayjs from 'dayjs';
 import moment from 'moment';
 import DatePicker from '../../src/date-picker2/index';
+import Form from '../../src/form/index';
+import Field from '../../src/field/index';
 import { DATE_PICKER_MODE } from '../../src/date-picker2/constant';
 import { KEYCODE } from '../../src/util';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 const { RangePicker, MonthPicker, YearPicker, WeekPicker, QuarterPicker } = DatePicker;
+const FormItem = Form.Item;
 
 const { DATE, WEEK, MONTH, QUARTER, YEAR } = DATE_PICKER_MODE;
 
@@ -550,6 +553,25 @@ describe('Picker', () => {
             wrapper = mount(<App />);
             clickDate('2020-12-13');
             assert(getStrValue() === '2020-12-13');
+        });
+
+        it('value controlled issue on Form', () => {
+            class App extends React.Component {
+                field = new Field(this);
+
+                render() {
+                    return (
+                        <Form field={this.field}>
+                            <FormItem label="RangePicker:">
+                                <DatePicker defaultValue="2020-12-10" visible showTime name="rangeDate" />
+                            </FormItem>
+                        </Form>
+                    );
+                }
+            }
+            wrapper = mount(<App />);
+            clickDate('2020-12-13');
+            assert(getStrValue() === '2020-12-13 00:00:00');
         });
 
         // https://github.com/alibaba-fusion/next/issues/2664

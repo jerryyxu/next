@@ -19,10 +19,11 @@ const { Popup } = Overlay;
 const { renderNode } = func;
 const { pickProps, pickOthers } = obj;
 
+// dayjs(null) !== dayjs(null)
 function isValueChanged(newValue, oldValue) {
     return Array.isArray(newValue)
         ? newValue.some((val, idx) => !datejs(val).isSame(oldValue && oldValue[idx]))
-        : !datejs(newValue).isSame(oldValue);
+        : newValue !== oldValue && !datejs(newValue).isSame(oldValue);
 }
 
 // 返回日期字符串
@@ -168,15 +169,16 @@ class Picker extends React.Component {
         const isRange = props.type === DATE_PICKER_TYPE.RANGE;
         let newState = { isRange, showOk: !!(props.showOk || props.showTime) };
 
-        if ('value' in props && isValueChanged(props.value, state.value)) {
+        if ('value' in props) {
             const value = checkAndRectify(props.value, isRange);
-
-            newState = {
-                ...newState,
-                value,
-                curValue: value,
-                inputValue: getInputValue(value, props.format),
-            };
+            if (isValueChanged(value, state.value)) {
+                newState = {
+                    ...newState,
+                    value,
+                    curValue: value,
+                    inputValue: getInputValue(value, props.format),
+                };
+            }
         }
 
         return newState;
