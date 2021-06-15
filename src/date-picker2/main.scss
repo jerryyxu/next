@@ -218,14 +218,14 @@
 }
 
 #{$range-picker2-prefix}-panel:not(#{$range-picker2-prefix}-panel-single) {
-    #{$calendar2-prefix}-cell-disabled {
+    #{$calendar2-disabled} {
         #{$calendar2-cell-inner} {
             @include calendar-disabled;
         }
     }
 
-    #{$calendar2-prefix}-cell-current:not(#{$calendar2-prefix}-cell-disabled) {
-        &#{$calendar2-prefix}-cell-selected {
+    #{$calendar2-prefix}-cell-current:not(#{$calendar2-disabled}) {
+        &#{$calendar2-selected} {
             &::before {
                 color: $color-text1-3;
                 background: $color-brand1-1;
@@ -279,7 +279,7 @@
                 right: 8px;
             }
 
-            &#{$calendar2-prefix}-cell-selected {
+            &#{$calendar2-selected} {
                 &#{$calendar2-prefix}-cell-hover-begin::after {
                     left: 8px;
                 }
@@ -331,7 +331,7 @@
         }
     }
 
-    #{$calendar2-prefix}-cell-edge-end + #{$calendar2-prefix}-cell-current:not(#{$calendar2-prefix}-cell-disabled) {
+    #{$calendar2-prefix}-cell-edge-end + #{$calendar2-prefix}-cell-current:not(#{$calendar2-disabled}) {
         &::before,
         &::after {
             left: 8px;
@@ -352,12 +352,12 @@
         display: none;
     }
 
-    tr:hover #{$calendar2-prefix}-cell:not(.next-calendar2-cell-disabled):not(.next-calendar2-cell-selected)::before {
+    tr:hover #{$calendar2-prefix}-cell:not(#{$calendar2-disabled}):not(#{$calendar2-selected})::before {
         @include calendar-hover;
     }
 
     #{$calendar2-prefix}-week-current {
-        #{$calendar2-prefix}-cell#{$calendar2-prefix}-cell-selected {
+        #{$calendar2-prefix}-cell#{$calendar2-selected} {
             &::before,
             #{$calendar2-cell-inner} {
                 color: $color-text1-3;
@@ -380,7 +380,7 @@
     }
 
     tr:not(#{$calendar2-prefix}-week-current) {
-        td#{$calendar2-prefix}-cell#{$calendar2-prefix}-cell-selected:not(.next-calendar2-cell-disabled) {
+        td#{$calendar2-prefix}-cell#{$calendar2-selected}:not(#{$calendar2-disabled}) {
             &::before,
             #{$calendar2-cell-inner} {
                 background-color: transparent;
@@ -391,7 +391,7 @@
 }
 
 #{$range-picker2-prefix}-panel #{$calendar2-prefix}-week-current {
-    #{$calendar2-prefix}-cell-selected:not(#{$calendar2-prefix}-cell-disabled) {
+    #{$calendar2-selected}:not(#{$calendar2-disabled}) {
         &:last-child,
         &:nth-child(2) {
             #{$calendar2-cell-inner} {

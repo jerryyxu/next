@@ -322,7 +322,7 @@ class RangePanel extends React.Component {
         }
 
         return {
-            [`${prefixCls}-selected`]: state >= SELECTED,
+            [`${prefix}selected`]: state >= SELECTED,
             ...rangeClassName,
             ...hoverClassName,
         };

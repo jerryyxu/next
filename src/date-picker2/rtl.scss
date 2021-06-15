@@ -44,8 +44,8 @@ div[dir="rtl"] {
     }
 
     #{$range-picker2-prefix}-panel:not(#{$range-picker2-prefix}-panel-single) {
-        #{$calendar2-prefix}-cell-current:not(#{$calendar2-prefix}-cell-disabled) {
-            &#{$calendar2-prefix}-cell-selected {
+        #{$calendar2-prefix}-cell-current:not(#{$calendar2-disabled}) {
+            &#{$calendar2-selected} {
                 &#{$calendar2-prefix}-cell-range-begin::before {
                     right: 50%;
                     left: 0;
@@ -76,7 +76,7 @@ div[dir="rtl"] {
                     right: 0;
                 }
 
-                &#{$calendar2-prefix}-cell-selected {
+                &#{$calendar2-selected} {
                     &#{$calendar2-prefix}-cell-hover-begin::after {
                         left: 0;
                         right: 7px;
@@ -138,7 +138,7 @@ div[dir="rtl"] {
             }
         }
 
-        #{$calendar2-prefix}-cell-edge-end + #{$calendar2-prefix}-cell-current:not(#{$calendar2-prefix}-cell-disabled) {
+        #{$calendar2-prefix}-cell-edge-end + #{$calendar2-prefix}-cell-current:not(#{$calendar2-disabled}) {
             &::before,
             &::after {
                 right: 8px;
@@ -162,7 +162,7 @@ div[dir="rtl"] {
 
     #{$calendar2-prefix}-table-week {
         #{$calendar2-prefix}-week-current {
-            #{$calendar2-prefix}-cell#{$calendar2-prefix}-cell-selected {
+            #{$calendar2-prefix}-cell#{$calendar2-selected} {
                 &:nth-child(2)::before {
                     right: 50%;
                     left: 0;

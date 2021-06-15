@@ -124,7 +124,7 @@ class DateTable extends React.Component {
      */
     renderCellContent(cellData) {
         const { props } = this;
-        const { mode, hoveredState, cellClassName } = props;
+        const { prefix, mode, hoveredState, cellClassName } = props;
         const { hoverValue } = this.state;
 
         const cellContent = [];
@@ -144,10 +144,10 @@ class DateTable extends React.Component {
                 const isDisabled = props.disabledDate && props.disabledDate(v, mode);
                 const hoverState = hoverValue && hoveredState && hoveredState(hoverValue);
                 const className = classnames(cellCls, {
+                    [`${prefix}selected`]: this.isSame(v, props.value, mode),
+                    [`${prefix}disabled`]: isDisabled,
                     [`${cellCls}-current`]: isCurrent, // 是否属于当前面板值
                     [`${cellCls}-today`]: mode === WEEK ? this.isSame(value, now, DATE) : this.isSame(v, now, mode),
-                    [`${cellCls}-selected`]: this.isSame(v, props.value, mode),
-                    [`${cellCls}-disabled`]: isDisabled,
                     [`${cellCls}-range-hover`]: hoverState,
                     ...(cellClassName && cellClassName(v)),
                 });

@@ -193,13 +193,9 @@ describe('Picker', () => {
                     );
                 });
 
-                assert(
-                    !wrapper.find('.next-calendar2-cell[title="2020-12-12"]').hasClass('next-calendar2-cell-disabled')
-                );
+                assert(!wrapper.find('.next-calendar2-cell[title="2020-12-12"]').hasClass('next-disabled'));
 
-                assert(
-                    wrapper.find('.next-calendar2-cell[title="2020-12-13"]').hasClass('next-calendar2-cell-disabled')
-                );
+                assert(wrapper.find('.next-calendar2-cell[title="2020-12-13"]').hasClass('next-disabled'));
 
                 wrapper.unmount();
             });
@@ -504,7 +500,7 @@ describe('Picker', () => {
                     'next-calendar2-cell-range-begin next-calendar2-cell-range-begin-single'
                 )
             );
-            assert(hasClassNames(findDate('2020-12-12'), 'next-calendar2-cell-disabled'));
+            assert(hasClassNames(findDate('2020-12-12'), 'next-disabled'));
 
             findDate('2020-12-15').simulate('mouseenter');
             setTimeout(() => {

@@ -35,7 +35,7 @@
         border: 1px solid transparent;
     }
 
-    &-cell-disabled {
+    #{$calendar2-disabled} {
         &::before {
             @include calendar-disabled;
         }
@@ -124,7 +124,7 @@
 
 
         #{$calendar2-prefix}-cell-current {
-            &:not(#{$calendar2-prefix}-cell-disabled):not(#{$calendar2-prefix}-cell-selected):not(#{$calendar2-prefix}-cell-today) {
+            &:not(#{$calendar2-disabled}):not(#{$calendar2-selected}):not(#{$calendar2-prefix}-cell-today) {
                 #{$calendar2-cell-inner} {
                     @include calendar-current;
                 }
@@ -134,13 +134,13 @@
                 }
             }
 
-            &#{$calendar2-prefix}-cell-today:not(#{$calendar2-prefix}-cell-disabled) {
+            &#{$calendar2-prefix}-cell-today:not(#{$calendar2-disabled}) {
                 #{$calendar2-cell-inner} {
                     color: $color-brand1-9;
                 }
             }
 
-            &#{$calendar2-prefix}-cell-selected:not(#{$calendar2-prefix}-cell-disabled) {
+            &#{$calendar2-selected}:not(#{$calendar2-disabled}) {
                 #{$calendar2-cell-inner} {
                     @include calendar-selected;
                 }
@@ -172,12 +172,12 @@
             border-top: 2px solid $color-line1-1;
         }
 
-        #{$calendar2-prefix}-cell-disabled #{$calendar2-cell-inner} {
+        #{$calendar2-disabled} #{$calendar2-cell-inner} {
             @include calendar-disabled-fullscreen;
         }
 
         #{$calendar2-prefix}-cell-current {
-            &:not(#{$calendar2-prefix}-cell-disabled):not(#{$calendar2-prefix}-cell-selected):not(#{$calendar2-prefix}-cell-today) {
+            &:not(#{$calendar2-disabled}):not(#{$calendar2-selected}):not(#{$calendar2-prefix}-cell-today) {
                 #{$calendar2-cell-inner} {
                     @include calendar-current-fullscreen;
                 }
@@ -197,7 +197,7 @@
                 background-color: $color-white;
             }
 
-            &#{$calendar2-prefix}-cell-selected:not(#{$calendar2-prefix}-cell-disabled) {
+            &#{$calendar2-selected}:not(#{$calendar2-disabled}) {
                 #{$calendar2-cell-inner} {
                     @include calendar-selected-fullscreen;
                 }
