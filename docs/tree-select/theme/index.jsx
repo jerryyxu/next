@@ -76,7 +76,7 @@ class FunctionDemo extends React.Component {
             treeCheckable,
             hasBorder,
             style: { width: '200px' },
-            popupContainer: target => target.parentNode,
+            followTrigger: true,
             children: (
                 <TreeNode label={i18n.trunk} value="0" key="0">
                     <TreeNode label={i18n.branch} value="1" key="1">
